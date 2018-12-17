@@ -551,6 +551,7 @@ RESPONSIVE
 }
  .post-meta .post-category.cat-2 {
      background-color: #ff8700;
+     margin-right: 15px;
 }
  .post-meta .post-category.cat-3 {
      background-color: #8d00ff;
@@ -560,10 +561,12 @@ RESPONSIVE
 }
 .post-meta .post-category.cat-5 {
     background-color: #e20000;
+    margin-right: 2px;
 }
  .post-meta .post-date {
      font-size: 13px;
      font-weight: 600;
+     float: right;
 }
  .post .post-title {
      font-size: 18px;

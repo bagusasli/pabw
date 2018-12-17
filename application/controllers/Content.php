@@ -25,9 +25,11 @@ class Content extends CI_Controller {
     $this->load->model('M_content');
     $this->load->helper('url_helper');
   }
+
 	public function index($value='')
 	{
-		$this->load->view('content/post_index');
+		$data['berita']=$this->M_content->tampilkanBerita()->result();
+		$this->load->view('content/post_index',$data);
 	}
 
 	public function post_donggala($value='')

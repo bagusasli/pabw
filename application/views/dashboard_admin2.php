@@ -47,7 +47,7 @@ INI PAKAI TEMPLATE INDEX2
 	</head>
 	<body>
     <div class="page-wrapper row">
-      <div class="col-lg-3">
+      <div class="col-lg-3 sidebar-height">
       <!-- menu sidebar -->
       <aside class="menu-sidebar2">
         <div class="logo">
@@ -61,18 +61,22 @@ INI PAKAI TEMPLATE INDEX2
                   <img src="<?php echo $actual_link ?>dashboard/images/icon/avatar-big-01.jpg" alt="John Doe" />
               </div>
               <h4 class="name">john doe</h4>
-              <a href="<?php echo site_url('Login/logout') ?>">Sign Out</a>
+              <a href="<?php echo site_url('Welcome/login') ?>">Sign Out</a>
           </div>
           <nav class="navbar-sidebar2">
               <ul class="list-unstyled navbar__list">
                 <li>
-                    <a href="<?php echo site_url('Dashboard/c_view') ?>">
-                        <i class="fas fa-chart-bar"></i>Daftar Data</a>
+                    <a href="<?php echo site_url('Dashboard/c_admin') ?>">
+                        <i class="fas fa-chart-bar"></i>Data Artikel</a>
                 </li>
-                  <li>
-                      <a href="<?php echo site_url('Dashboard/c_input') ?>">
-                          <i class="fas fa-chart-bar"></i>Tambah Data</a>
-                  </li>
+              </ul>
+          </nav>
+          <nav class="navbar-sidebar2">
+              <ul class="list-unstyled navbar__list">
+                <li>
+                    <a href="<?php echo site_url('Dashboard/c_admin2') ?>">
+                        <i class="fas fa-chart-bar"></i>Data User</a>
+                </li>
               </ul>
           </nav>
         </div>
@@ -84,29 +88,26 @@ INI PAKAI TEMPLATE INDEX2
       <div class="col-lg-9">
                   <div class="row">
                       <div class="col-lg-12">
-                          <h2 class="title-1 m-b-25">Data Artikel</h2>
+                          <h2 class="title-1 m-b-25">Data User</h2>
                           <div class="table-responsive table--no-card m-b-40">
                             <table id="example" class="table table-striped table-bordered" style="width:100%">
       <thead>
           <tr>
-              <th>Judul</th>
-              <th>Lokasi</th>
-              <th>Kategori</th>
-              <th>Tanggal</th>
+              <th>Nama</th>
+              <th>Email</th>
+              <th>Level</th>
               <th>Opsi</th>
           </tr>
       </thead>
       <tbody>
           <?php
-          if( !empty($article) ) {
-          foreach($article as $a){ ?>
+          if( !empty($user) ) {
+          foreach($user as $a){ ?>
           <tr>
-            <td><?php echo $a->judul ?></td>
-            <td><?php echo $a->lokasi ?></td>
-            <td><?php echo $a->kategori ?></td>
-            <td><?php echo $a->tanggal ?></td>
+            <td><?php echo $a->username?></td>
+            <td><?php echo $a->email ?></td>
+            <td><?php echo $a->level ?></td>
             <td>
-              <a class="btn btn-primary" href="<?php echo site_url('Dashboard/c_edit/'.$a->id) ?>">Edit</a></button>
   					  <a class="btn btn-danger"href="<?php echo site_url('Dashboard/c_hapus/'.$a->id) ?>" onclick="return confirm('Apakah anda yakin menghapus data ini?')">Hapus</a></button>
           </td>
           </tr>
@@ -120,6 +121,8 @@ INI PAKAI TEMPLATE INDEX2
 
       </div>
     </div>
+
+
     </div>
 
 		<!-- jQuery Plugins -->

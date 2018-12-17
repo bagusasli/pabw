@@ -71,7 +71,7 @@ $actual_link = "http://localhost/bigpro/";
 							<!-- post -->
 								<div class="col-md-12">
 									<div class="post post-thumb">
-										<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
+										<a class="post-img" href="<?php echo site_url('Content/view/6') ?>"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
 										<div class="post-body">
 											<div class="post-meta">
 												<a class="post-category cat-5" href="category.html">Breaking News</a>

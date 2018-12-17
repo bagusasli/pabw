@@ -15,6 +15,7 @@ $actual_link = "http://localhost/bigpro/";
 
 		<!-- Bootstrap -->
 		<link type="text/css" rel="stylesheet" href="<?php echo $actual_link ?>webmag/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="<?php echo $actual_link ?>isotope-master/css/style.css" />
 
 		<!-- Font Awesome Icon -->
 		<link rel="stylesheet" href="<?php echo $actual_link ?>webmag/css/font-awesome.min.css">
@@ -60,11 +61,10 @@ $actual_link = "http://localhost/bigpro/";
 			<!-- /Nav -->
 		</header>
 
-		<!-- section -->
+    <!-- section -->
 		<div class="section">
 			<!-- container -->
 			<div class="container">
-
 				<!-- row -->
 				<div class="row">
 					<div class="col-md-12">
@@ -73,415 +73,32 @@ $actual_link = "http://localhost/bigpro/";
 						</div>
 					</div>
 
+          <div class="portfolio-item" id="">
 					<!-- post -->
+          <?php
+            if( !empty($berita) ) {
+            foreach ($berita as $key) {
+          ?>
+          <div class="item <?php echo $key->lokasi?>">
 					<div class="col-md-4">
 						<div class="post">
-							<a class="post-img" href="<?php echo site_url('Content/view/6') ?>"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
+							<a class="post-img" href="<?php echo site_url('Content/view/'.$key->id) ?>"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">Breaking News</a>
-									<span class="post-date">November 30, 2018</span>
+									<a class="post-category cat-5" href="category.html"><?php echo $key->kategori ?></a>
+                  <a class="post-category cat-2" href="category.html"><?php echo $key->lokasi ?></a>
+									<span class="post-date"><?php echo $key->tanggal ?></span>
 								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR</a></h3>
+								<h3 class="post-title"><a href="blog-post.html"><?php echo $key->judul?></a></h3>
 							</div>
 						</div>
 					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="<?php echo site_url('Content/view/7') ?>"><img src="<?php echo $actual_link ?>webmag/img/post-bandara.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-2" href="category.html">News</a>
-									<span class="post-date">November 29, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-5.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-3" href="category.html">Tips</a>
-									<span class="post-date">November 28, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-          <!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">Breaking News</a>
-									<span class="post-date">November 30, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bandara.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-2" href="category.html">News</a>
-									<span class="post-date">November 29, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-5.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-3" href="category.html">Tips</a>
-									<span class="post-date">November 28, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-          <!-- button -->
-          <div class="col-md-12">
-            <div class="section-row">
-              <button class="primary-button center-block">Load More</button>
-              <hr>
-            </div>
           </div>
-          <!-- /button -->
-				</div>
-				<!-- /row -->
-
-        <!-- row -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="section-title text-center">
-							<h2>Tips</h2>
-						</div>
-					</div>
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">Breaking News</a>
-									<span class="post-date">November 30, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR</a></h3>
-							</div>
-						</div>
-					</div>
+          <?php } ?>
+          <?php } ?>
 					<!-- /post -->
+        </div>
 
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bandara.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-2" href="category.html">News</a>
-									<span class="post-date">November 29, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-5.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-3" href="category.html">Tips</a>
-									<span class="post-date">November 28, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-          <!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">Breaking News</a>
-									<span class="post-date">November 30, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bandara.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-2" href="category.html">News</a>
-									<span class="post-date">November 29, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-5.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-3" href="category.html">Tips</a>
-									<span class="post-date">November 28, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-          <!-- button -->
-          <div class="col-md-12">
-            <div class="section-row">
-              <button class="primary-button center-block">Load More</button>
-              <hr>
-            </div>
-          </div>
-          <!-- /button -->
-				</div>
-				<!-- /row -->
-
-        <!-- row -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="section-title text-center">
-							<h2>Internasional</h2>
-						</div>
-					</div>
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">Breaking News</a>
-									<span class="post-date">November 30, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bandara.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-2" href="category.html">News</a>
-									<span class="post-date">November 29, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-5.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-3" href="category.html">Tips</a>
-									<span class="post-date">November 28, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-          <!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">Breaking News</a>
-									<span class="post-date">November 30, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bandara.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-2" href="category.html">News</a>
-									<span class="post-date">November 29, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-5.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-3" href="category.html">Tips</a>
-									<span class="post-date">November 28, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-          <!-- button -->
-          <div class="col-md-12">
-            <div class="section-row">
-              <button class="primary-button center-block">Load More</button>
-              <hr>
-            </div>
-          </div>
-          <!-- /button -->
-				</div>
-				<!-- /row -->
-
-        <!-- row -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="section-title text-center">
-							<h2>Lokal</h2>
-						</div>
-					</div>
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">Breaking News</a>
-									<span class="post-date">November 30, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bandara.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-2" href="category.html">News</a>
-									<span class="post-date">November 29, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-5.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-3" href="category.html">Tips</a>
-									<span class="post-date">November 28, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-          <!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">Breaking News</a>
-									<span class="post-date">November 30, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bandara.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-2" href="category.html">News</a>
-									<span class="post-date">November 29, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
-
-					<!-- post -->
-					<div class="col-md-4">
-						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-5.jpg" alt=""></a>
-							<div class="post-body">
-								<div class="post-meta">
-									<a class="post-category cat-3" href="category.html">Tips</a>
-									<span class="post-date">November 28, 2018</span>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
-							</div>
-						</div>
-					</div>
-					<!-- /post -->
           <!-- button -->
           <div class="col-md-12">
             <div class="section-row">
@@ -556,6 +173,26 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<!-- /container -->
 		</footer>
 		<!-- /footer -->
+  	<script src="<?php echo $actual_link ?>isotope/master/js/jquery.isotope.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      $('#blabla').isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+      });
+      $('.portfolio-menu ul li').click(function(){
+        $('.portfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+
+        var selector = $(this).attr('data-filter');
+        $('.portfolio-item').isotope({
+          filter: selector
+        });
+        return false;
+      });
+
+    </script>
 
 
 		<!-- jQuery Plugins -->

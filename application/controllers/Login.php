@@ -19,6 +19,12 @@ class Login extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
+	 public function __construct($value='')
+	 {
+	 	parent::__construct();
+		$this->load->library('session');
+	 }
+
 	public function verifikasi()
 	{
 		$this->load->model('M_login');
@@ -26,55 +32,38 @@ class Login extends CI_Controller {
     $username = $this->input->post('username');
     $password = $this->input->post('password');
 
-		// $where = array(
-		// 	'username' => $username,
-		// 	'password' => md5($password)
-		// );
-		// $cek = $this->M_login->verifikasi("user",$where)->num_rows();
-		// if($cek > 0){
-		// 	$data_session = array(
-		// 		'nama' => $username,
-		// 		'status' => "login"
-		// 	);
-		// 	$this->session->set_userdata($data_session);
-		// 	$this->load->view('dashboard_view');
-		// }else{
-		// 	echo "Username dan Password salah !";
-		// }
-
-		$login = $this->M_login->verifikasi($username,md5($password));
-    if($login){
-      return redirect('/Dashboard/c_view');
-    }
-    else{
-      echo "alert('gagal')";
-    }
-	}
-
-
-	function aksi_login(){
-	$username = $this->input->post('username');
-	$password = $this->input->post('password');
-	$where = array(
-		'username' => $username,
-		'password' => md5($password)
+		$where = array(
+			'username' => $username,
+			'password' => md5($password)
 		);
-	$cek = $this->M_login->verifikasi("user",$where)->num_rows();
-	if($cek > 0){
 
-		$data_session = array(
-			'nama' => $username,
-			'status' => "login"
+		$cek = $this->M_login->verifikasi("user",$where)->num_rows();
+		$hasil = $this->M_login->verifikasi("user",$where);
+
+		if($cek > 0){
+			$data_session = array(
+				'nama' => $username,
+				'status' => "login"
 			);
+			$this->session->set_userdata($data_session);
+			foreach ($hasil->result() as $key) {
+				$sess_data['id'] = $key->id;
+				$sess_data['level'] = $key->level;
+				$sess_data['nama'] = $key->nama;
+			}
+			$this->session->set_userdata($sess_data);
 
-		$this->session->set_userdata($data_session);
+			if($this->session->userdata('level')=='kontributor'){
+				redirect('Dashboard/c_view');
+			}
+			if($this->session->userdata('level')=='admin'){
+				redirect('Dashboard/c_admin2');
+			}
 
-		redirect(base_url("admin"));
-
-	}else{
-		echo "Username dan password salah !";
+		}else{
+			echo "Username dan Password salah !";
 		}
-	}
+  }
 
 	function logout($value='')
 	{

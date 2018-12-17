@@ -20,12 +20,11 @@ class M_login extends CI_Model {
 	 */
    public function getData($value='')
    {
-     return $this->db->get('user') -> result();
+     return $this->db->get('user')->result();
    }
 
-   public function verifikasi($username,$password)
+   public function verifikasi($table, $where)
    {
-    return $this->db->where('username',$username)->where('password',$password)->get('user')->row();
-
+    return $this->db->get_where($table, $where);
    }
 }

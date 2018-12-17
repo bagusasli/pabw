@@ -47,7 +47,7 @@ INI PAKAI TEMPLATE INDEX2
 	</head>
 	<body>
     <div class="page-wrapper row">
-      <div class="col-lg-3">
+      <div class="col-lg-3 sidebar-height">
       <!-- menu sidebar -->
       <aside class="menu-sidebar2">
         <div class="logo">
@@ -66,13 +66,17 @@ INI PAKAI TEMPLATE INDEX2
           <nav class="navbar-sidebar2">
               <ul class="list-unstyled navbar__list">
                 <li>
-                    <a href="<?php echo site_url('Dashboard/c_view') ?>">
-                        <i class="fas fa-chart-bar"></i>Daftar Data</a>
+                    <a href="<?php echo site_url('Dashboard/c_admin') ?>">
+                        <i class="fas fa-chart-bar"></i>Data Artikel</a>
                 </li>
-                  <li>
-                      <a href="<?php echo site_url('Dashboard/c_input') ?>">
-                          <i class="fas fa-chart-bar"></i>Tambah Data</a>
-                  </li>
+              </ul>
+          </nav>
+          <nav class="navbar-sidebar2">
+              <ul class="list-unstyled navbar__list">
+                <li>
+                    <a href="<?php echo site_url('Dashboard/c_admin2') ?>">
+                        <i class="fas fa-chart-bar"></i>Data User</a>
+                </li>
               </ul>
           </nav>
         </div>
@@ -119,7 +123,10 @@ INI PAKAI TEMPLATE INDEX2
                   </div>
 
       </div>
+
     </div>
+
+
     </div>
 
 		<!-- jQuery Plugins -->

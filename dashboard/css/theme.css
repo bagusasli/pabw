@@ -1570,6 +1570,10 @@ section {
     vertical-align: middle;
 }
 
+.user-table{
+  margin-top: 50px;
+  margin-left: 350px;
+}
 .menu-sidebar {
     width: 300px;
     position: fixed;

@@ -24,4 +24,10 @@ class M_Content extends CI_Model {
       return $hasil;
     }
 
+    public function tampilkanBerita($value='')
+    {
+      $hasil=$this->db->query("SELECT * FROM article WHERE kategori='News'");
+      return $hasil;
+    }
+
 	}

@@ -32,6 +32,21 @@ class Dashboard extends CI_Controller {
 		$this->load->view('dashboard_view',$data);
 	}
 
+	public function c_admin()
+	{
+
+		$x['user']=$this->M_dashboard->tampilkanUser();
+		$data['article']=$this->M_dashboard->tampilkanData();
+		$this->load->view('dashboard_admin',$data);
+	}
+
+	public function c_admin2()
+	{
+
+		$data['user']=$this->M_dashboard->tampilkanUser();
+		$this->load->view('dashboard_admin2',$data);
+	}
+
   public function c_input()
 	{
 		$this->load->view('dashboard_input');
@@ -66,6 +81,7 @@ class Dashboard extends CI_Controller {
 		$this->M_dashboard->updateData($where, $data, 'article');
 		$this->load->view('dashboard_edit',$data);
 	}
+
 	public function c_hapus($id)
 	{
 		$where = array('id' => $id);
@@ -73,6 +89,12 @@ class Dashboard extends CI_Controller {
 		redirect('Dashboard/c_view');
 	}
 
+	public function c_hapusUser($id)
+	{
+		$where = array('id' => $id);
+		$this->M_dashboard->hapusDataUser($where,'user');
+		redirect('Dashboard/c_admin');
+	}
 	public function insert($value='')
 	{
 		$judul = $_POST['judul'];

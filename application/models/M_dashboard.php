@@ -25,6 +25,12 @@ class M_Dashboard extends CI_Model {
 		return $query->result();
 	 }
 
+	 public function tampilkanUser()
+	 {
+	 	$query = $this->db->select("*")->from('user')->get();
+		return $query->result();
+	 }
+
 	 public function tambahData($table_name, $data)
    {
 		// $this->db->set($data);
@@ -49,6 +55,11 @@ class M_Dashboard extends CI_Model {
 		$this->db->delete($table);
  	}
 
+	public function hapusDataUser($where,$table)
+ 	{
+	 	$this->db->where($where);
+	 	$this->db->delete($table);
+ 	}
 	public function lihatGambar($value='')
 	{
 		return $this->db->get('media')->result();
