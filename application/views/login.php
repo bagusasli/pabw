@@ -16,9 +16,6 @@ $actual_link = "http://localhost/bigpro/";
     <!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="<?php echo $actual_link ?>webmag/css/bootstrap.min.css"/>
 
-    <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="<?php echo $actual_link ?>webmag/css/font-awesome.min.css">
-
     <!-- Custom stlylesheet -->
     <link type="text/css" rel="stylesheet" href="<?php echo $actual_link ?>webmag/css/style.css"/>
 
