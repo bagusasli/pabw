@@ -1,8 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class M_login extends CI_Model {
-
 	/**
 	 * Index Page for this controller.
 	 *
@@ -22,7 +20,6 @@ class M_login extends CI_Model {
    {
      return $this->db->get('user')->result();
    }
-
    public function verifikasi($table, $where)
    {
     return $this->db->get_where($table, $where);
