@@ -89,7 +89,7 @@ $actual_link = "http://localhost/bigpro/";
                   <a class="post-category cat-2" href="category.html"><?php echo $key->lokasi ?></a>
 									<span class="post-date"><?php echo $key->tanggal ?></span>
 								</div>
-								<h3 class="post-title"><a href="blog-post.html"><?php echo $key->judul?></a></h3>
+								<h3 class="post-title"><a href="<?php echo site_url('Content/view/'.$key->id) ?>"><?php echo $key->judul?></a></h3>
 							</div>
 						</div>
 					</div>
