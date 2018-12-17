@@ -63,7 +63,7 @@ $b=$data->row_array();
 
       <!-- Page Header -->
 			<div id="post-header" class="page-header">
-				<div class="background-img" style="background-image: url('<?php echo $actual_link ?>webmag/img/post-donggala.jpg');"></div>
+				<div class="background-img" style="background-image: url('<?php echo $actual_link?>/images/<?php echo $b['media']; ?>')"></div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10">

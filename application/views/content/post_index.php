@@ -82,7 +82,7 @@ $actual_link = "http://localhost/bigpro/";
           <div class="item <?php echo $key->lokasi?>">
 					<div class="col-md-4">
 						<div class="post">
-							<a class="post-img" href="<?php echo site_url('Content/view/'.$key->id) ?>"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
+							<a class="post-img" href="<?php echo site_url('Content/view/'.$key->id) ?>"><img src="<?php echo $actual_link ?>images/<?php echo $key->media; ?>" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
 									<a class="post-category cat-5" href="category.html"><?php echo $key->kategori ?></a>
