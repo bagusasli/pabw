@@ -22,13 +22,13 @@ class Content extends CI_Controller {
 	 public function __construct()
   {
     parent::__construct();
-    $this->load->model('M_content');
+    $this->load->model('m_content');
     $this->load->helper('url_helper');
   }
 
 	public function index($value='')
 	{
-		$data['berita']=$this->M_content->tampilkanBerita()->result();
+		$data['berita']=$this->m_content->tampilkanBerita()->result();
 		$this->load->view('content/post_index',$data);
 	}
 
@@ -40,7 +40,7 @@ class Content extends CI_Controller {
 	public function view($value='')
 	{
 		$kode=$this->uri->segment(3);
-		$x['data']=$this->M_content->getBerita_id($kode);
+		$x['data']=$this->m_content->getBerita_id($kode);
 		$this->load->view('content/post_donggala',$x);
 	}
 

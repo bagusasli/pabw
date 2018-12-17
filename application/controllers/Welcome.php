@@ -21,13 +21,13 @@ class Welcome extends CI_Controller {
 	public function __construct()
 	 {
 	  parent::__construct();
-	  $this->load->model('M_content');
+	  $this->load->model('m_content');
 	  $this->load->helper('url_helper');
 	 }
 
 	public function index()
 	{
-		$data['berita']=$this->M_content->tampilkanBerita()->result();
+		$data['berita']=$this->m_content->tampilkanBerita()->result();
 		$this->load->view('index');
 	}
 

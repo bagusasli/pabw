@@ -1,4 +1,4 @@
-<?php
+m_login<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
@@ -27,7 +27,7 @@ class Login extends CI_Controller {
 
 	public function verifikasi()
 	{
-		$this->load->model('M_login');
+		$this->load->model('m_login');
 
     $username = $this->input->post('username');
     $password = $this->input->post('password');
@@ -37,8 +37,8 @@ class Login extends CI_Controller {
 			'password' => md5($password)
 		);
 
-		$cek = $this->M_login->verifikasi("user",$where)->num_rows();
-		$hasil = $this->M_login->verifikasi("user",$where);
+		$cek = $this->m_login->verifikasi("user",$where)->num_rows();
+		$hasil = $this->m_login->verifikasi("user",$where);
 
 		if($cek > 0){
 			$data_session = array(

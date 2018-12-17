@@ -21,29 +21,29 @@ class Dashboard extends CI_Controller {
 	 public function __construct()
 	 {
 	 	parent::__construct();
-		$this->load->model('M_dashboard');
+		$this->load->model('m_dashboard');
 		$this->load->helper('url');
 		$this->load->helper(array('form', 'url'));
 	 }
 
 	public function c_view()
 	{
-		$data['article']=$this->M_dashboard->tampilkanData();
+		$data['article']=$this->m_dashboard->tampilkanData();
 		$this->load->view('dashboard_view',$data);
 	}
 
 	public function c_admin()
 	{
 
-		$x['user']=$this->M_dashboard->tampilkanUser();
-		$data['article']=$this->M_dashboard->tampilkanData();
+		$x['user']=$this->m_dashboard->tampilkanUser();
+		$data['article']=$this->m_dashboard->tampilkanData();
 		$this->load->view('dashboard_admin',$data);
 	}
 
 	public function c_admin2()
 	{
 
-		$data['user']=$this->M_dashboard->tampilkanUser();
+		$data['user']=$this->m_dashboard->tampilkanUser();
 		$this->load->view('dashboard_admin2',$data);
 	}
 
@@ -55,7 +55,7 @@ class Dashboard extends CI_Controller {
   public function c_edit($id)
 	{
 		$where = array('id' => $id);
-		$data['article'] = $this->M_dashboard->tampilkanDataEdit($where,'article')->result();
+		$data['article'] = $this->m_dashboard->tampilkanDataEdit($where,'article')->result();
 		$this->load->view('dashboard_edit',$data);
 	}
 
@@ -78,21 +78,21 @@ class Dashboard extends CI_Controller {
 
 		$where = array('id' => $id);
 
-		$this->M_dashboard->updateData($where, $data, 'article');
+		$this->m_dashboard->updateData($where, $data, 'article');
 		$this->load->view('dashboard_edit',$data);
 	}
 
 	public function c_hapus($id)
 	{
 		$where = array('id' => $id);
-		$this->M_dashboard->hapusData($where,'article');
+		$this->m_dashboard->hapusData($where,'article');
 		redirect('Dashboard/c_view');
 	}
 
 	public function c_hapusUser($id)
 	{
 		$where = array('id' => $id);
-		$this->M_dashboard->hapusDataUser($where,'user');
+		$this->m_dashboard->hapusDataUser($where,'user');
 		redirect('Dashboard/c_admin');
 	}
 	public function insert($value='')
@@ -124,7 +124,7 @@ class Dashboard extends CI_Controller {
 		$this->load->library('upload', $config);
 		$this->upload->do_upload('media');
 
-		$insert = $this->M_dashboard->tambahData('article',$data);
+		$insert = $this->m_dashboard->tambahData('article',$data);
 
 		// if ($this->input->post('simpan')) {
 		// 	$upload = $this->M_dashboard->uploadGambar();
