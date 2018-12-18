@@ -18,7 +18,7 @@ $actual_link = "http://localhost/bigpro/";
     <link rel="stylesheet" href="<?php echo $actual_link ?>isotope-master/css/style.css" />
 
 		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="<?php echo $actual_link ?>webmag/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="<?php echo $actual_link ?>webmag/css/style.css"/>
