@@ -1,6 +1,6 @@
 <!-- link index page -->
 <?php
-$actual_link = "http://localhost/bigpro/";
+$actual_link = "http://10.0.0.2/";
  ?>
 <!DOCTYPE html>
 
