@@ -202,7 +202,7 @@ $actual_link = "http://localhost/bigpro/";
 													<a class="post-category cat-2" href="category.html">News</a>
 													<span class="post-date">November 30, 2018</span>
 												</div>
-												<h3 class="post-title"><a href="<?php echo site_url('Content/view/8') ?>">>Akibat Gempa dan Tsunami, 17 Ribu Rumah Rusak di Donggala</a></h3>
+												<h3 class="post-title"><a href="<?php echo site_url('Content/view/8') ?>">Akibat Gempa dan Tsunami, 17 Ribu Rumah Rusak di Donggala</a></h3>
 												<p>Bupati Donggala, Sulawesi Tengah, Kasman Lassa, mengungkapkan terdapat sekitar 17 ribu rumah warga di daerahnya rusak dihantam gempa, tsunami dan tanah longsor pada akhir September lalu...</p>
 											</div>
 										</div>
