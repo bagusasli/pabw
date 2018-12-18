@@ -71,13 +71,13 @@ $actual_link = "http://localhost/bigpro/";
 							<!-- post -->
 								<div class="col-md-12">
 									<div class="post post-thumb">
-										<a class="post-img" href="<?php echo site_url('Content/view/6') ?>"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
+										<a class="post-img" href="<?php echo site_url('Content/view/14') ?>"><img src="<?php echo $actual_link ?>images/post-deteksi.jpg" alt=""></a>
 										<div class="post-body">
 											<div class="post-meta">
-												<a class="post-category cat-5" href="category.html">Breaking News</a>
-												<span class="post-date">March 27, 2018</span>
+												<a class="post-category cat-5" href="category.html">News</a>
+												<span class="post-date">December 18, 2018</span>
 											</div>
-											<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR </a></h3>
+											<h3 class="post-title"><a href="blog-post.html">Yang Dipertaruhkan Saat Negara Menerima Bantuan Asing</a></h3>
 										</div>
 									</div>
 								</div>
@@ -92,23 +92,23 @@ $actual_link = "http://localhost/bigpro/";
 							</div>
 
 							<div class="post post-widget">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/widget-1.jpg" alt=""></a>
+								<a class="post-img" href="<?php echo site_url('Content/view/8') ?>"><img src="<?php echo $actual_link ?>images/post-donggala.jpg" alt=""></a>
 								<div class="post-body">
-									<h3 class="post-title"><a href="blog-post.html">Akibat Gempa dan Tsunami, 17 Ribu Rumah Rusak di Donggala</a></h3>
+									<h3 class="post-title"><a href="<?php echo site_url('Content/view/8') ?>">Akibat Gempa dan Tsunami, 17 Ribu Rumah Rusak di Donggala</a></h3>
 								</div>
 							</div>
 
 							<div class="post post-widget">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/widget-2.jpg" alt=""></a>
+								<a class="post-img" href="<?php echo site_url('Content/view/10') ?>"><img src="<?php echo $actual_link ?>images/post-4.jpg" alt=""></a>
 								<div class="post-body">
-									<h3 class="post-title"><a href="blog-post.html">Sukses di Lombok, UI Tambah Alat Deteksi Gempa di Donggala</a></h3>
+									<h3 class="post-title"><a href="<?php echo site_url('Content/view/10') ?>">Sukses di Lombok, UI Tambah Alat Deteksi Gempa di Donggala</a></h3>
 								</div>
 							</div>
 
 							<div class="post post-widget">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/widget-3.jpg" alt=""></a>
+								<a class="post-img" href="<?php echo site_url('Content/view/12') ?>"><img src="<?php echo $actual_link ?>images/post-selandiabaru.jpg" alt=""></a>
 								<div class="post-body">
-									<h3 class="post-title"><a href="blog-post.html">Gempa Membuat Pulau-Pulau di Selandia Baru Semakin Berdekatan</a></h3>
+									<h3 class="post-title"><a href="<?php echo site_url('Content/view/12') ?>">Gempa Membuat Pulau-Pulau di Selandia Baru Semakin Berdekatan</a></h3>
 								</div>
 							</div>
 
@@ -129,13 +129,13 @@ $actual_link = "http://localhost/bigpro/";
 					<!-- post -->
 					<div class="col-md-4">
 						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bali.jpg" alt=""></a>
+							<a class="post-img" href="<?php echo site_url('Content/view/14') ?>"><img src="<?php echo $actual_link ?>images/post-deteksi.jpg" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">Breaking News</a>
-									<span class="post-date">November 30, 2018</span>
+									<a class="post-category cat-5" href="category.html">News</a>
+									<span class="post-date">December 18, 2018</span>
 								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bali : Gempa Susulan 5,5 SR</a></h3>
+								<h3 class="post-title"><a href="<?php echo site_url('Content/view/14') ?>">Yang Dipertaruhkan Saat Negara Menerima Bantuan Asing</a></h3>
 							</div>
 						</div>
 					</div>
@@ -144,13 +144,13 @@ $actual_link = "http://localhost/bigpro/";
 					<!-- post -->
 					<div class="col-md-4">
 						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-bandara.jpg" alt=""></a>
+							<a class="post-img" href="<?php echo site_url('Content/view/7') ?>"><img src="<?php echo $actual_link ?>images/post-bandara.jpg" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
 									<a class="post-category cat-2" href="category.html">News</a>
-									<span class="post-date">November 29, 2018</span>
+									<span class="post-date">November 23, 2018</span>
 								</div>
-								<h3 class="post-title"><a href="blog-post.html">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
+								<h3 class="post-title"><a href="<?php echo site_url('Content/view/7') ?>">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
 							</div>
 						</div>
 					</div>
@@ -159,13 +159,13 @@ $actual_link = "http://localhost/bigpro/";
 					<!-- post -->
 					<div class="col-md-4">
 						<div class="post">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-5.jpg" alt=""></a>
+							<a class="post-img" href="<?php echo site_url('Content/view/15') ?>"><img src="<?php echo $actual_link ?>images/post-5.jpg" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
 									<a class="post-category cat-3" href="category.html">Tips</a>
-									<span class="post-date">November 28, 2018</span>
+									<span class="post-date">Desember 18, 2018</span>
 								</div>
-								<h3 class="post-title"><a href="blog-post.html">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
+								<h3 class="post-title"><a href="<?php echo site_url('Content/view/15') ?>">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
 							</div>
 						</div>
 					</div>
@@ -196,14 +196,14 @@ $actual_link = "http://localhost/bigpro/";
 									<!-- post -->
 									<div class="col-md-12">
 										<div class="post post-row">
-											<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-donggala.jpg" alt=""></a>
+											<a class="post-img" href="<?php echo site_url('Content/view/8') ?>"><img src="<?php echo $actual_link ?>images/post-donggala.jpg" alt=""></a>
 											<div class="post-body">
 												<div class="post-meta">
 													<a class="post-category cat-2" href="category.html">News</a>
 													<span class="post-date">November 30, 2018</span>
 												</div>
-												<h3 class="post-title"><a href="blog-post.html">Akibat Gempa dan Tsunami, +17.000 Rumah Rusak di Donggala</a></h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+												<h3 class="post-title"><a href="<?php echo site_url('Content/view/8') ?>">>Akibat Gempa dan Tsunami, 17 Ribu Rumah Rusak di Donggala</a></h3>
+												<p>Bupati Donggala, Sulawesi Tengah, Kasman Lassa, mengungkapkan terdapat sekitar 17 ribu rumah warga di daerahnya rusak dihantam gempa, tsunami dan tanah longsor pada akhir September lalu...</p>
 											</div>
 										</div>
 									</div>
@@ -212,14 +212,14 @@ $actual_link = "http://localhost/bigpro/";
 									<!-- post -->
 									<div class="col-md-12">
 										<div class="post post-row">
-											<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-deteksi.jpg" alt=""></a>
+											<a class="post-img" href="<?php echo site_url('Content/view/10') ?>"><img src="<?php echo $actual_link ?>images/post-4.jpg" alt=""></a>
 											<div class="post-body">
 												<div class="post-meta">
 													<a class="post-category cat-2" href="category.html">News</a>
 													<span class="post-date">November 27, 2018</span>
 												</div>
-												<h3 class="post-title"><a href="blog-post.html">Sukses di Lombok, UI Tambah Alat Deteksi Gempa di Donggala</a></h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+												<h3 class="post-title"><a href="<?php echo site_url('Content/view/10') ?>">Sukses di Lombok, UI Tambah Alat Deteksi Gempa di Donggala</a></h3>
+												<p>Universitas Indonesia (UI) akan menambah jumlah alat deteksi dini gempa bumi yang akan dipasang di daerah rawan bencana. Alat deteksi dini gempa itu dikembangkan oleh ...</p>
 											</div>
 										</div>
 									</div>
@@ -228,14 +228,14 @@ $actual_link = "http://localhost/bigpro/";
 									<!-- post -->
 									<div class="col-md-12">
 										<div class="post post-row">
-											<a class="post-img" href="blog-post.html"><img src="<?php echo $actual_link ?>webmag/img/post-selandiabaru.jpg" alt=""></a>
+											<a class="post-img" href="<?php echo site_url('Content/view/12') ?>"><img src="<?php echo $actual_link ?>images/post-selandiabaru.jpg" alt=""></a>
 											<div class="post-body">
 												<div class="post-meta">
 													<a class="post-category cat-1" href="category.html">Internasional</a>
 													<span class="post-date">November 27, 2018</span>
 												</div>
-												<h3 class="post-title"><a href="blog-post.html">Gempa Membuat Pulau-Pulau di Selandia Baru Semakin Berdekatan</a></h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+												<h3 class="post-title"><a href="<?php echo site_url('Content/view/12') ?>">Gempa Membuat Pulau-Pulau di Selandia Baru Semakin Berdekatan</a></h3>
+												<p>Bantuan internasional membuat penanganan bencana alam bukan sekadar aksi kemanusiaan dan filantropisme, tapi juga bersifat...</p>
 											</div>
 										</div>
 									</div>
