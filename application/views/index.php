@@ -74,7 +74,7 @@ $actual_link = "http://10.0.0.2/";
 										<a class="post-img" href="<?php echo site_url('Content/view/14') ?>"><img src="<?php echo $actual_link ?>images/post-deteksi.jpg" alt=""></a>
 										<div class="post-body">
 											<div class="post-meta">
-												<a class="post-category cat-5" href="category.html">News</a>
+												<a class="post-category cat-5" href="#">News</a>
 												<span class="post-date">December 18, 2018</span>
 											</div>
 											<h3 class="post-title"><a href="blog-post.html">Yang Dipertaruhkan Saat Negara Menerima Bantuan Asing</a></h3>
@@ -132,7 +132,7 @@ $actual_link = "http://10.0.0.2/";
 							<a class="post-img" href="<?php echo site_url('Content/view/14') ?>"><img src="<?php echo $actual_link ?>images/post-deteksi.jpg" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
-									<a class="post-category cat-5" href="category.html">News</a>
+									<a class="post-category cat-5" href="#">News</a>
 									<span class="post-date">December 18, 2018</span>
 								</div>
 								<h3 class="post-title"><a href="<?php echo site_url('Content/view/14') ?>">Yang Dipertaruhkan Saat Negara Menerima Bantuan Asing</a></h3>
@@ -147,7 +147,7 @@ $actual_link = "http://10.0.0.2/";
 							<a class="post-img" href="<?php echo site_url('Content/view/7') ?>"><img src="<?php echo $actual_link ?>images/post-bandara.jpg" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
-									<a class="post-category cat-2" href="category.html">News</a>
+									<a class="post-category cat-2" href="#">News</a>
 									<span class="post-date">November 23, 2018</span>
 								</div>
 								<h3 class="post-title"><a href="<?php echo site_url('Content/view/7') ?>">Bandara Soekarno-Hatta Adakan Simulasi Penanganan Gempa</a></h3>
@@ -162,7 +162,7 @@ $actual_link = "http://10.0.0.2/";
 							<a class="post-img" href="<?php echo site_url('Content/view/15') ?>"><img src="<?php echo $actual_link ?>images/post-5.jpg" alt=""></a>
 							<div class="post-body">
 								<div class="post-meta">
-									<a class="post-category cat-3" href="category.html">Tips</a>
+									<a class="post-category cat-3" href="#">Tips</a>
 									<span class="post-date">Desember 18, 2018</span>
 								</div>
 								<h3 class="post-title"><a href="<?php echo site_url('Content/view/15') ?>">Gempa Dadakan? Ini Tips Agar Kamu Tetap Selamat !</a></h3>
@@ -199,7 +199,7 @@ $actual_link = "http://10.0.0.2/";
 											<a class="post-img" href="<?php echo site_url('Content/view/8') ?>"><img src="<?php echo $actual_link ?>images/post-donggala.jpg" alt=""></a>
 											<div class="post-body">
 												<div class="post-meta">
-													<a class="post-category cat-2" href="category.html">News</a>
+													<a class="post-category cat-2" href="#">News</a>
 													<span class="post-date">November 30, 2018</span>
 												</div>
 												<h3 class="post-title"><a href="<?php echo site_url('Content/view/8') ?>">Akibat Gempa dan Tsunami, 17 Ribu Rumah Rusak di Donggala</a></h3>
@@ -215,7 +215,7 @@ $actual_link = "http://10.0.0.2/";
 											<a class="post-img" href="<?php echo site_url('Content/view/10') ?>"><img src="<?php echo $actual_link ?>images/post-4.jpg" alt=""></a>
 											<div class="post-body">
 												<div class="post-meta">
-													<a class="post-category cat-2" href="category.html">News</a>
+													<a class="post-category cat-2" href="#">News</a>
 													<span class="post-date">November 27, 2018</span>
 												</div>
 												<h3 class="post-title"><a href="<?php echo site_url('Content/view/10') ?>">Sukses di Lombok, UI Tambah Alat Deteksi Gempa di Donggala</a></h3>
@@ -231,7 +231,7 @@ $actual_link = "http://10.0.0.2/";
 											<a class="post-img" href="<?php echo site_url('Content/view/12') ?>"><img src="<?php echo $actual_link ?>images/post-selandiabaru.jpg" alt=""></a>
 											<div class="post-body">
 												<div class="post-meta">
-													<a class="post-category cat-1" href="category.html">Internasional</a>
+													<a class="post-category cat-1" href="#">Internasional</a>
 													<span class="post-date">November 27, 2018</span>
 												</div>
 												<h3 class="post-title"><a href="<?php echo site_url('Content/view/12') ?>">Gempa Membuat Pulau-Pulau di Selandia Baru Semakin Berdekatan</a></h3>
@@ -286,9 +286,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								<div class="footer-widget">
 									<h3 class="footer-title">About Us</h3>
 									<ul class="footer-links">
-										<li><a href="about.html">About Us</a></li>
+										<li><a href="#">About Us</a></li>
 										<li><a href="#">Join Us</a></li>
-										<li><a href="contact.html">Contacts</a></li>
+										<li><a href="#">Contacts</a></li>
 									</ul>
 								</div>
 							</div>
